@@ -51,7 +51,7 @@ public class AdWork extends Fragment {
         lvAdWork.setAdapter(adWorkAdapter);
 
         //Duyệt tạm chưa sài db
-        AnhXa();
+        //AnhXa();
 
         mData = FirebaseDatabase.getInstance().getReference();
         mData.child("Order").addChildEventListener(new ChildEventListener() {
@@ -172,6 +172,7 @@ public class AdWork extends Fragment {
         dialog.show();
     }
 
+    /*
     private void AnhXa(){
         arrayAdWork.add(new BagRow(R.drawable.ck_banh_bao_ba_xiu_2,   "Bánh bao xá xíu 2",
                 "9:50",3));
@@ -183,5 +184,5 @@ public class AdWork extends Fragment {
                 "9:20",5));
         arrayAdWork.add(new BagRow(R.drawable.ck_single_banana,       "Single banana",
                 "8:55",1));
-    }
+    }*/
 }
